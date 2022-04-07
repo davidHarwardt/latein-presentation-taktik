@@ -69,4 +69,4 @@ window.addEventListener("click", ev => { ev.preventDefault(); next(); });
 
 window.addEventListener("keypress", ev => { ev.preventDefault(); next(); });
 
-window.addEventListener("contextmenu", ev => { ev.preventDefault(); current -= 2; next(); })
+window.addEventListener("contextmenu", ev => { ev.preventDefault(); current -= 2; next(); });
