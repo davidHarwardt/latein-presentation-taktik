@@ -49,12 +49,11 @@ function next()
     if(current >= NUM_VIDEOS) { console.log("finshed"); return; }
 
     display();
-
+    
     videos[current].ele.play();
     
-    
-
     current++;
+
 }
 
 function display()
@@ -68,4 +67,6 @@ display();
 
 window.addEventListener("click", ev => { ev.preventDefault(); next(); });
 
-window.addEventListener("keypress", ev => { ev.preventDefault(); if(ev.key === "ArrowRight") { next(); } });
+window.addEventListener("keypress", ev => { ev.preventDefault(); next(); });
+
+window.addEventListener("contextmenu", ev => { ev.preventDefault(); current -= 2; next(); })
